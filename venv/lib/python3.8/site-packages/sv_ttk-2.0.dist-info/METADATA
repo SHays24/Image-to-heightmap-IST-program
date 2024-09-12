@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: sv-ttk
+Version: 2.0
+Summary: A gorgeous theme for Tkinter that looks like Windows 11
+Home-page: https://github.com/rdbende/Sun-Valley-ttk-theme
+Author: rdbende
+Author-email: rdbende@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/rdbende/Sun-Valley-ttk-theme
+Project-URL: Tracker, https://github.com/rdbende/Sun-Valley-ttk-theme/issues
+Keywords: dark-theme,sun-valley,tcl,tcl/tk,theme,theme,tile,tk,tkinter,ttk,windows-11,winui
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Tcl
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-theme/master/assets/hero_dark.png">
+  <img alt="Cover image" src="https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-theme/master/assets/hero_light.png">
+</picture>
+
+## Installation [![image](https://static.pepy.tech/badge/sv-ttk)](https://pypi.org/project/sv-ttk)
+The theme is easily installable as a Python package
+
+```
+pip install sv-ttk
+```
+
+
+### Usage
+For detailed documentation, see the [wiki page](https://github.com/rdbende/Sun-Valley-ttk-theme/wiki/sv_ttk-docs)
+
+```python
+import tkinter
+from tkinter import ttk
+
+import sv_ttk
+
+root = tk.Tk()
+
+button = ttk.Button(root, text="Click me!")
+button.pack()
+
+# This where the magic happens
+sv_ttk.set_theme("dark")
+
+root.mainloop()
+```
+
+
+## Known bugs and limitations
+- Tkinter (Tk) isn't really good at displaying `png` images, so the window can be quite laggy when resizing, especially on Windows.
+
+## What's next?
+Check out my other ttk themes!
+- [Azure ttk theme](https://github.com/rdbende/Azure-ttk-theme)
+- [Forest ttk theme](https://github.com/rdbende/Forest-ttk-theme)
+
+
